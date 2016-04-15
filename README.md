@@ -81,11 +81,22 @@ Quelques sites et bouquins.
 
 ## Code
 
-* [beets_extract.py](./beets_extract.py) extraits quelques données depuis [beets](http://beets.io/)
-  dans un fichier sqlite
+* [beets_extract.py](./beets_extract.py) extrait quelques données depuis votre
+  collection de musique [beets](http://beets.io/) vers un fichier sqlite. Voir
+  dans le dossier `./data`
 
 * [simple_app.py](./simple_app.py) est un "*Hello App*" pour
   [Flask RESTPlus](https://github.com/noirbizarre/flask-restplus)
 
 * [musicapp.py](./musicapp.py) : exemple d'une API REST sur votre collection de
   musique album/artiste
+
+---
+
+## Lancer les applis
+
+* `pip install -r requirements.txt` dans un virtualenv
+
+* `python simple_app.py` puis `http://localhost:5000/meetup`
+
+* `python musicapp.py` puis `http://localhost:5000/`

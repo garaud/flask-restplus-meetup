@@ -76,3 +76,16 @@ Quelques sites et bouquins.
 * [Thoughts on RESTful API Design](http://restful-api-design.readthedocs.org/en/latest/)
 
 * [RESTful Web Services](http://shop.oreilly.com/product/9780596529260.do)
+
+---
+
+## Code
+
+* [beets_extract.py](./beets_extract.py) extraits quelques données depuis [beets](http://beets.io/)
+  dans un fichier sqlite
+
+* [simple_app.py](./simple_app.py) est un "*Hello App*" pour
+  [Flask RESTPlus](https://github.com/noirbizarre/flask-restplus)
+
+* [musicapp.py](./musicapp.py) : exemple d'une API REST sur votre collection de
+  musique album/artiste

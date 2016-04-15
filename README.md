@@ -35,7 +35,7 @@
 
 * Création / modification / accès à des ressources
 
-* Ressources unitairement identifiée et bien représentées
+* Ressource unitairement identifiée et bien représentée
 
 ---
 
@@ -67,6 +67,12 @@
 
 ## Ressources
 
-REST
+Quelques sites et bouquins.
 
-How don't hate your APIs
+* [Build APIS you Don't Hate](https://leanpub.com/build-apis-you-wont-hate)
+
+* [REST API Tutorial](http://www.restapitutorial.com/)
+
+* [Thoughts on RESTful API Design](http://restful-api-design.readthedocs.org/en/latest/)
+
+* [RESTful Web Services](http://shop.oreilly.com/product/9780596529260.do)

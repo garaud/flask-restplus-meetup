@@ -4,6 +4,7 @@
 Handle you data music collection imported from beets - http://beets.io/
 """
 
+from __future__ import print_function, unicode_literals
 import logging
 import os.path as osp
 

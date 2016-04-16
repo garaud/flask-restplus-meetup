@@ -68,6 +68,16 @@ class Album(Resource):
             api.abort(404, "Album id '{}' not found".format(album_id))
         return album[0]
 
+    def delete(self, album_id):
+        album = _query("SELECT * FROM albums WHERE id=?", album_id)
+        if not album:
+            api.abort(404, "Album id '{}' not found".format(album_id))
+        else:
+            with sqlite3.connect(DBFILE) as cnx:
+                cu = cnx.cursor()
+                cu.execute("DELETE FROM albums WHERE id=?", (album_id,))
+                cnx.commit()
+        return '', 204
 
 search_parser = api.parser()
 search_parser.add_argument("q", required=True, dest='q', location='args',

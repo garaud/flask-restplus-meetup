@@ -30,7 +30,8 @@ MODEL = api.model("CD", {"artist": fields.String,
                          "album": fields.String,
                          "year": fields.Integer,
                          "genre": fields.String,
-                         "label": fields.String})
+                         "label": fields.String,
+                         "uri": fields.Url("album_resource", absolute=True)})
 
 
 def _query(q, *params):
@@ -38,6 +39,8 @@ def _query(q, *params):
         cu = cnx.cursor()
         cu.execute(q, params)
         columns = [x[0] for x in cu.description]
+        # replace 'id' by 'album_id'
+        columns[columns.index('id')] = 'album_id'
         return [dict(zip(columns, x)) for x in cu.fetchall()]
 
 
@@ -54,7 +57,7 @@ def search_artist(name, limit=None):
     return _query(q, name)
 
 
-@api.route("/album/<album_id>")
+@api.route("/album/<album_id>", endpoint='album_resource')
 class Album(Resource):
     @api.marshal_with(MODEL)
     def get(self, album_id):

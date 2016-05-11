@@ -4,7 +4,7 @@
 <u>Python Meetup</u>
 </br>
 <div style="font-size: 0.9em">Bordeaux &ndash; Node</div>
-2016-05-10
+2016-05-24
 </br>
 <div style="font-size: 0.8em">Damien Garaud /
 <a href="https://twitter.com/jazzydag">@jazzydag</a>
@@ -49,7 +49,7 @@
     - prix à date d'une action / d'un produit financier
     - concentrations de polluants à une station de mesure géolocalisée
     - détection de tendance
-    - statistiques de l'INSEE à une adresse postale donnée
+    - statistiques de l'INSEE à une adresse postale donnée -- https://pyris.damiengaraud.org
 
 * Utilisation, amélioration, couche d'abstraction, interfaces Web
 
